@@ -7,7 +7,7 @@ const NewMessage = (props) => {
   };
 
   const updateNewDialogInput = (e) => {
-    props.updateNewDialogInput(e.target.value);
+    props.updateNewDialogMessageInput(e.target.value);
   };
 
   return (

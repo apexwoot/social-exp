@@ -38,10 +38,10 @@ const dialogsReducer = (state = initialState, action) => {
   }
 };
 
-export const updateNewDialogMessageInputAC = (input) => {
+export const updateNewDialogMessageInput = (input) => {
   return { type: UPDATE_NEW_DIALOG_MESSAGE_INPUT, input: input };
 };
-export const addMessageAC = () => {
+export const addMessage = () => {
   return { type: ADD_MESSAGE };
 };
 
