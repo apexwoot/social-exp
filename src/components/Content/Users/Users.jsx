@@ -8,7 +8,6 @@ const Users = (props) => {
   for (let i = 1; i <= pagesCount; i++) pagesArray.push(i);
   return (
     <>
-      {()=> console.log('test')}
       {props.isFetching ? <Preloader /> : null}
       <div className={styles.UsersWrapper}>
         <div className={styles.pagination}>
