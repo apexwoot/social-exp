@@ -1,0 +1,22 @@
+.newPostWrapper {
+  display: grid;
+  grid-template-areas:
+    'i'
+    'b';
+  grid-template-rows: auto 1fr;
+  margin: 1em;
+}
+
+.newPostInput {
+  grid-area: i;
+  width: 700px;
+  height: 100px;
+  resize: vertical;
+}
+
+.submitButton {
+  grid-area: b;
+  margin: 1em;
+  position: relative;
+  right: -620px;
+}

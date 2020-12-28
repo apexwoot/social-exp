@@ -1,0 +1,22 @@
+.userDetailsWrapper {
+  display: grid;
+  grid-template-columns: 2fr 8fr;
+  margin-top: 1em;
+}
+
+.imgWrapper img {
+  margin-inline: 1em;
+  width: 100px;
+  border-radius: 50px;
+}
+
+.description div {
+  display: grid;
+  grid-template-columns: 100px auto;
+  padding-top: 10px;
+  /* padding-right: 50px; */
+}
+
+.description {
+  margin-inline: 1em;
+}

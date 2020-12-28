@@ -1,0 +1,24 @@
+.dialogsWrapper {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  grid-template-rows: auto auto;
+  grid-template-areas: 'd m' 'd n';
+  padding-inline: 1em;
+}
+
+.dialogItems {
+  grid-area: d;
+  margin: 10px;
+  padding-right: 2em;
+  border-right: 3px rgba(196, 195, 195, 0.753) solid;
+  justify-self: stretch;
+}
+
+.messageItems {
+  grid-area: m;
+  margin: 10px;
+}
+
+.newMessageWrapper {
+  grid-area: n;
+}

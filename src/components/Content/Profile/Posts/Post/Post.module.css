@@ -1,0 +1,17 @@
+.postWrapper {
+  margin-top: 5px;
+  padding: 0.5em;
+  display: grid;
+  grid-template-columns: 100px auto;
+  grid-template-rows: auto;
+}
+
+.imageAreaWrapper img {
+  width: 60px;
+  border-radius: 50%;
+}
+
+
+.postMessage {
+  margin-top: 1em;
+}

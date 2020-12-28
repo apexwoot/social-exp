@@ -1,0 +1,11 @@
+.contentWrapper {
+  grid-area: c;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
+  background-color: #f1f1f1;
+  padding: 20px 10px;
+
+  
+  /* grid-template-rows: 10em auto auto; */
+  
+}
+

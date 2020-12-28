@@ -1,0 +1,13 @@
+.selectedPage {
+  font-weight: bold;
+}
+
+.pageNumber {
+  margin-left: 0.1em;
+  cursor: pointer;
+}
+
+.pagination {
+  text-align: center;
+  margin-bottom: 1em;
+}
