@@ -1,4 +1,4 @@
-import { addPostAC, updateNewPostInputAC } from '../../../../redux/profileReducer';
+import { addPost, updateNewPostInput } from '../../../../redux/profileReducer';
 import NewPost from './NewPost';
 import { connect } from 'react-redux';
 
@@ -8,13 +8,6 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return {
-    newInputOnChange: (input) => dispatch(updateNewPostInputAC(input)),
-    addPost: () => dispatch(addPostAC()),
-  };
-};
-
-const NewPostContainer = connect(mapStateToProps, mapDispatchToProps)(NewPost);
+const NewPostContainer = connect(mapStateToProps, { updateNewPostInput, addPost })(NewPost);
 
 export default NewPostContainer;

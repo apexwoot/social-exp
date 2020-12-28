@@ -31,10 +31,10 @@ const profileReducer = (state = initialState, action) => {
   }
 };
 
-export const addPostAC = () => {
+export const addPost = () => {
   return { type: ADD_POST };
 };
-export const updateNewPostInputAC = (input) => {
+export const updateNewPostInput = (input) => {
   return { type: UPDATE_NEW_POST_INPUT, input: input };
 };
 

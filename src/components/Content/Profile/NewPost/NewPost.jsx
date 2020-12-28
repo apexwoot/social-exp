@@ -2,9 +2,8 @@ import React from 'react';
 import s from './NewPost.module.css';
 
 const NewPost = (props) => {
-  console.log(props);
   const newInputOnChange = (e) => {
-    props.newInputOnChange(e.target.value);
+    props.updateNewPostInput(e.target.value);
   };
 
   const addPost = () => {
