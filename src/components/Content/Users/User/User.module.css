@@ -9,9 +9,14 @@
   grid-area: l;
   display: grid;
   grid-template-rows: auto 25px;
-  grid-template-areas: 
-  'empty'
-   'followed';
+  grid-template-areas:
+    'empty'
+    'followed';
+}
+
+.leftSide img {
+  width: 90px;
+  border-radius: 50%;
 }
 
 .leftSide .followed {
@@ -28,7 +33,7 @@
 
   display: grid;
   grid-gap: 1em;
-  grid-template-columns: 2fr 2fr 2fr ;
+  grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: 2fr 2fr 2fr;
   grid-template-areas:
     'fullName empty location'
