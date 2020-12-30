@@ -1,5 +1,6 @@
 export const ADD_POST = 'ADD-POST';
 export const UPDATE_NEW_POST_INPUT = 'UPDATE-NEW-POST-INPUT';
+export const SET_USER_PROFILE = 'SET-USER-PROFILE';
 
 const initialState = {
   postsData: [
@@ -8,6 +9,7 @@ const initialState = {
     { id: 3, message: 'Are you ok?', likesCount: 4 },
   ],
   newPostInput: '',
+  currentUserShowing: { fullName: 'Apex Woot' },
 };
 
 const profileReducer = (state = initialState, action) => {
@@ -26,16 +28,19 @@ const profileReducer = (state = initialState, action) => {
         newPostInput: action.input,
       };
     }
+    case SET_USER_PROFILE: {
+      return {
+        ...state,
+        currentUserShowing: action.profile,
+      };
+    }
     default:
       return state;
   }
 };
 
-export const addPost = () => {
-  return { type: ADD_POST };
-};
-export const updateNewPostInput = (input) => {
-  return { type: UPDATE_NEW_POST_INPUT, input: input };
-};
+export const addPost = () => ({ type: ADD_POST });
+export const updateNewPostInput = (input) => ({ type: UPDATE_NEW_POST_INPUT, input });
+export const setUserProfile = (profile) => ({ type: SET_USER_PROFILE, profile });
 
 export default profileReducer;
